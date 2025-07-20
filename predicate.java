@@ -13,7 +13,7 @@ public class predicate {
         Consumer<String> greeter = name -> System.out.println("Hello, " + name + "!");
         greeter.accept("Siddhant"); //output will be hello siddhant !
 
-        //
+        //takes no input and returns a result
         Supplier<String> coldDrinkSupplier = () -> "here your cold drink";
         System.out.println(coldDrinkSupplier.get()); //output: Here your cold drink
     }
