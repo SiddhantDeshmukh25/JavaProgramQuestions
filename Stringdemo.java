@@ -4,10 +4,37 @@ public class Stringdemo {
     public static void main(String[] args) {
         Person person = new Person();
         System.out.println(person.age);
+            person.sound();
         Human human = new Human();
         System.out.println(human.name);
+        Dog dog = new Dog();{
+           dog.sound();
+        }
     }
 }
+interface interf{
+    public void m1();
+   void m2();
+}
+class ServiceProvider implements interf{
+    @Override
+ public void m1() {
+
+    }
+
+    @Override
+    public void m2() {
+
+    }
+}
+
+//interface concept:
+        //Any service rewquirement specification (SRS)
+    //
+//abstraction
+//abstract method
+//abstract method, class, interfaces
+//
 
         //no diff in both, both will create object
 //        String s1 = new String("Siddhant");
@@ -20,6 +47,17 @@ public class Stringdemo {
     class Person {
         String name;
         int age;
+        void sound(){
+            System.out.println("Sound");
+        }
+
+        public String getName() {
+            return name;
+        }
+
+        public void setName(String name) {
+            this.name = name;
+        }
 
         public Person() {
             this.name ="Siddhant";
@@ -34,6 +72,12 @@ public class Stringdemo {
     public void Male(String name, int age){
         super.name = "Shripad";
     }
+    }
+    class Dog extends Human{
+        @Override
+        void sound() {
+            System.out.println("Bark");
+        }
     }
 
 //
