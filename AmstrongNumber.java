@@ -2,7 +2,7 @@ import com.sun.jdi.PathSearchingVirtualMachine;
 
 public class AmstrongNumber {
     public static void main(String[] args) {
-        System.out.println(isAmstrong(131));}
+        System.out.println(isAmstrong(153));}
         public static boolean isAmstrong(int n){
             int nod = countDigits(n);
             int on =n;
